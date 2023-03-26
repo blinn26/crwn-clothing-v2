@@ -10,6 +10,7 @@ import {
   onAuthStateChanged,
   NextOrObserver,
   User,
+  
 } from 'firebase/auth';
 import {
   getFirestore,
@@ -26,15 +27,16 @@ import {
 import { Category } from '../../store/categories/category.types';
 
 const firebaseConfig = {
-  apiKey: 'AIzaSyDDU4V-_QV3M8GyhC9SVieRTDM4dbiT0Yk',
-  authDomain: 'crwn-clothing-db-98d4d.firebaseapp.com',
-  projectId: 'crwn-clothing-db-98d4d',
-  storageBucket: 'crwn-clothing-db-98d4d.appspot.com',
-  messagingSenderId: '626766232035',
-  appId: '1:626766232035:web:506621582dab103a4d08d6',
+  apiKey: "AIzaSyB5jBXBavKab_DDkTXGmw9_CtVHZC7yIh4",
+  authDomain: "crwn-clothing-v2-1a08f.firebaseapp.com",
+  projectId: "crwn-clothing-v2-1a08f",
+  storageBucket: "crwn-clothing-v2-1a08f.appspot.com",
+  messagingSenderId: "588034400718",
+  appId: "1:588034400718:web:3f1a500c6fc38b642c8b9f",
+  measurementId: "G-8YWKSR6T7J"
 };
 
-const firebaseApp = initializeApp(firebaseConfig);
+const firebaseapp = initializeApp(firebaseConfig);
 
 const googleProvider = new GoogleAuthProvider();
 
